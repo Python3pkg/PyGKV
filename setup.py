@@ -17,7 +17,7 @@ setup(
     classifiers = [
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
-        'Topic :: Git :: Data Persistence :: Databases :: Key-Value Store',
+        'Topic :: Database',
 
         'License :: OSI Approved :: MIT License',
 
