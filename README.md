@@ -15,21 +15,20 @@ Currently the package supports the following python versions:
   * IronPython  
 
 ## 3. Usage
-  * The current API is quiet simple, clone this repo with  
+  * The current API is quiet simple, install using pip  
   
   ```bash
-  $ git clone git@github.com:ishankhare07/PyGKV.git
+  $ pip install pygkv
   ```
   
   * Run python  
   ```bash
- $ cd PyGKV/
  $ python3
   ```
   * Import the Library
 
   ``` python
-  >>> import GitDatabase
+  >>> from pygkv import GitDatabase
   >>> db = GitDatabase.Database()
   >>> db["name"] = "Guido Van Rossum"
   >>> db["name"]
