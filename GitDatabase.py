@@ -5,11 +5,11 @@ class Database:
         subprocess.Popen(('git','init'), stdout=subprocess.PIPE)
         self.data = {}
 
-    def set(self, key, value):
+    def __setitem__(self, key, value):
         hash = self.hash_object(value)
         self.data[key] = hash.strip()
 	
-    def get(self, key):
+    def __getitem__(self, key):
         hash = self.data[key]
         data = self.cat_file(hash)
         return data.strip().decode('utf-8')
