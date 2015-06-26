@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pygkv',
-    version='0.1a1',
+    version='0.1.0',
 
     description="A library to use Git as Key-Value store",
     long_description="Uses Git as Key-Value store with a dictionary-like API",
@@ -15,7 +15,7 @@ setup(
     license="MIT",
 
     classifiers = [
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'Topic :: Database',
 
@@ -26,5 +26,7 @@ setup(
     ],
 
     keywords = "Git Data Persistence Databases Key-Value Store",
+
+    packages=find_packages()
     
 )
