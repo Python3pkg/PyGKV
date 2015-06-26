@@ -18,7 +18,7 @@ Currently the package supports the following python versions:
   * The current API is quiet simple, clone this repo with  
   
   ```bash
-    $ git clone git@github.com:ishankhare07/PyGKV.git
+  $ git clone git@github.com:ishankhare07/PyGKV.git
   ```
   
   * Run python  
