@@ -7,7 +7,6 @@ class Database:
 
     def set(self, key, value):
         hash = self.hash_object(value)
-        print(hash)
         self.data[key] = hash.strip()
 	
     def get(self, key):
