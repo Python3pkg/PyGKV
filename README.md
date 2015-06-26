@@ -23,14 +23,15 @@ Currently the package supports the following python versions:
   
   * Run python  
   ```bash
-    $ cd PyGKV/
-    $ python3
+ $ cd PyGKV/
+ $ python3
   ```
   * Import the Library
-  ```python
-    >>> import GitDatabase
-    >>> db = GitDatabase.Database()
-    >>> db["name"] = "Guido Van Rossum"
-    >>> db["name"]
-    "Guido Van Rossum"
+
+  ``` python
+  >>> import GitDatabase
+  >>> db = GitDatabase.Database()
+  >>> db["name"] = "Guido Van Rossum"
+  >>> db["name"]
+  Guido Van Rossum
   ```
