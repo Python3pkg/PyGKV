@@ -26,6 +26,7 @@ Currently the package supports the following python versions:
     $ cd PyGKV/
     $ python3
   ```
+  * Import the Library
   ```python
     >>> import GitDatabase
     >>> db = GitDatabase.Database()
