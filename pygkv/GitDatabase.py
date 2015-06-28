@@ -1,4 +1,5 @@
 import subprocess
+import yaml
 
 class Database:
     def __init__(self):
@@ -6,17 +7,15 @@ class Database:
         self.data = {}
 
     def __setitem__(self, key, value):
-        hash = self.hash_object(value)
+        hash = self.hash_object(yaml.dump(value))
         self.data[key] = hash.strip()
 	
     def __getitem__(self, key):
         hash = self.data[key]
         data = self.cat_file(hash)
-        return data.strip().decode('utf-8')
+        return yaml.load(data)
 
     def hash_object(self, value):
-        if not isinstance(value,str):
-            value = str(value)
         echo = subprocess.Popen(("echo",value), stdout = subprocess.PIPE)
         output = subprocess.check_output(("git", "hash-object", "-w", "--stdin"), stdin=echo.stdout)
         return output

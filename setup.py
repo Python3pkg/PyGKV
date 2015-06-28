@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pygkv',
-    version='0.1.0',
+    version='0.3',
 
     description="A library to use Git as Key-Value store",
     long_description="Uses Git as Key-Value store with a dictionary-like API",
@@ -27,6 +27,8 @@ setup(
 
     keywords = "Git Data Persistence Databases Key-Value Store",
 
-    packages=find_packages()
+    packages=find_packages(),
+
+    install_requires=['pyyaml'],
     
 )
